@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="hisdbDataSet" targetNamespace="http://tempuri.org/hisdbDataSet.xsd" xmlns:mstns="http://tempuri.org/hisdbDataSet.xsd" xmlns="http://tempuri.org/hisdbDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="hisdbConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="hisdbConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Prototype1_1.Properties.Settings.GlobalReference.Default.hisdbConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="br_departmentTableAdapter" GeneratorDataComponentClassName="br_departmentTableAdapter" Name="br_department" UserDataComponentName="br_departmentTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="hisdbConnectionString (Settings)" DbObjectName="hisdb.br_department" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `br_dep_name`, `dep_id`, `gmt_created`, `gmt_modified` FROM `br_department`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="chargeTableAdapter" GeneratorDataComponentClassName="chargeTableAdapter" Name="charge" UserDataComponentName="chargeTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="hisdbConnectionString (Settings)" DbObjectName="hisdb.charge" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `cha_id`, `cha_price`, `char_type`, `gmt_created`, `gmt_modified` FROM `charge`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="checkTableAdapter" GeneratorDataComponentClassName="checkTableAdapter" Name="check" UserDataComponentName="checkTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="hisdbConnectionString (Settings)" DbObjectName="hisdb.`check`" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `cha_id`, `item_id`, `doc_id`, `result`, `gmt_created`, `gmt_modified` FROM `check`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="departmentTableAdapter" GeneratorDataComponentClassName="departmentTableAdapter" Name="department" UserDataComponentName="departmentTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="hisdbConnectionString (Settings)" DbObjectName="hisdb.department" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `dep_name`, `gmt_created`, `gmt_modified` FROM `department`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="doctorTableAdapter" GeneratorDataComponentClassName="doctorTableAdapter" Name="doctor" UserDataComponentName="doctorTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="hisdbConnectionString (Settings)" DbObjectName="hisdb.doctor" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `br_dep_id`, `doc_name`, `doc_sex`, `doc_position`, `doc_education`, `doc_age`, `doc_telephone`, `doc_address`, `doc_introduction`, `gmt_created`, `gmt_modified` FROM `doctor`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="itemTableAdapter" GeneratorDataComponentClassName="itemTableAdapter" Name="item" UserDataComponentName="itemTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="hisdbConnectionString (Settings)" DbObjectName="hisdb.item" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `item_name`, `item_address`, `item_price`, `gmt_created`, `gmt_modified` FROM `item`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="loginTableAdapter" GeneratorDataComponentClassName="loginTableAdapter" Name="login" UserDataComponentName="loginTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="hisdbConnectionString (Settings)" DbObjectName="hisdb.login" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `role`, `password`, `gmt_created`, `gmt_modified` FROM `login`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="medicineTableAdapter" GeneratorDataComponentClassName="medicineTableAdapter" Name="medicine" UserDataComponentName="medicineTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="hisdbConnectionString (Settings)" DbObjectName="hisdb.medicine" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `med_name`, `med_unit`, `med_price`, `med_effect`, `med_usage`, `med_surplus`, `med_date`, `med_manufacturer`, `gmt_created`, `gmt_modified` FROM `medicine`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="patientTableAdapter" GeneratorDataComponentClassName="patientTableAdapter" Name="patient" UserDataComponentName="patientTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="hisdbConnectionString (Settings)" DbObjectName="hisdb.patient" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `pat_name`, `pat_sex`, `pat_age`, `pat_telnum`, `pat_id`, `is_married`, `pat_address`, `pat_pre_his`, `pat_allegen`, `pat_census`, `pat_height`, `pat_weight`, `emer_name`, `gmt_created`, `gmt_modified` FROM `patient`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="prescriptionTableAdapter" GeneratorDataComponentClassName="prescriptionTableAdapter" Name="prescription" UserDataComponentName="prescriptionTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="hisdbConnectionString (Settings)" DbObjectName="hisdb.prescription" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `char_id`, `doc_id`, `med_id`, `med_time`, `med_day`, `pre_advice`, `gmt_created`, `gmt_modified` FROM `prescription`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="registrationTableAdapter" GeneratorDataComponentClassName="registrationTableAdapter" Name="registration" UserDataComponentName="registrationTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="hisdbConnectionString (Settings)" DbObjectName="hisdb.registration" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `doc_id`, `card_id`, `pat_type`, `reg_charge`, `is_cancel`, `gmt_created`, `gmt_modified` FROM `registration`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="hisdbDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="hisdbDataSet" msprop:Generator_UserDSName="hisdbDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="br_department" msprop:Generator_TableClassName="br_departmentDataTable" msprop:Generator_TableVarName="tablebr_department" msprop:Generator_TablePropName="br_department" msprop:Generator_RowDeletingName="br_departmentRowDeleting" msprop:Generator_RowChangingName="br_departmentRowChanging" msprop:Generator_RowEvHandlerName="br_departmentRowChangeEventHandler" msprop:Generator_RowDeletedName="br_departmentRowDeleted" msprop:Generator_UserTableName="br_department" msprop:Generator_RowChangedName="br_departmentRowChanged" msprop:Generator_RowEvArgName="br_departmentRowChangeEvent" msprop:Generator_RowClassName="br_departmentRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="charge" msprop:Generator_TableClassName="chargeDataTable" msprop:Generator_TableVarName="tablecharge" msprop:Generator_TablePropName="charge" msprop:Generator_RowDeletingName="chargeRowDeleting" msprop:Generator_RowChangingName="chargeRowChanging" msprop:Generator_RowEvHandlerName="chargeRowChangeEventHandler" msprop:Generator_RowDeletedName="chargeRowDeleted" msprop:Generator_UserTableName="charge" msprop:Generator_RowChangedName="chargeRowChanged" msprop:Generator_RowEvArgName="chargeRowChangeEvent" msprop:Generator_RowClassName="chargeRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="check" msprop:Generator_TableClassName="checkDataTable" msprop:Generator_TableVarName="tablecheck" msprop:Generator_TablePropName="check" msprop:Generator_RowDeletingName="checkRowDeleting" msprop:Generator_RowChangingName="checkRowChanging" msprop:Generator_RowEvHandlerName="checkRowChangeEventHandler" msprop:Generator_RowDeletedName="checkRowDeleted" msprop:Generator_UserTableName="check" msprop:Generator_RowChangedName="checkRowChanged" msprop:Generator_RowEvArgName="checkRowChangeEvent" msprop:Generator_RowClassName="checkRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="department" msprop:Generator_TableClassName="departmentDataTable" msprop:Generator_TableVarName="tabledepartment" msprop:Generator_TablePropName="department" msprop:Generator_RowDeletingName="departmentRowDeleting" msprop:Generator_RowChangingName="departmentRowChanging" msprop:Generator_RowEvHandlerName="departmentRowChangeEventHandler" msprop:Generator_RowDeletedName="departmentRowDeleted" msprop:Generator_UserTableName="department" msprop:Generator_RowChangedName="departmentRowChanged" msprop:Generator_RowEvArgName="departmentRowChangeEvent" msprop:Generator_RowClassName="departmentRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="doctor" msprop:Generator_TableClassName="doctorDataTable" msprop:Generator_TableVarName="tabledoctor" msprop:Generator_TablePropName="doctor" msprop:Generator_RowDeletingName="doctorRowDeleting" msprop:Generator_RowChangingName="doctorRowChanging" msprop:Generator_RowEvHandlerName="doctorRowChangeEventHandler" msprop:Generator_RowDeletedName="doctorRowDeleted" msprop:Generator_UserTableName="doctor" msprop:Generator_RowChangedName="doctorRowChanged" msprop:Generator_RowEvArgName="doctorRowChangeEvent" msprop:Generator_RowClassName="doctorRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="item" msprop:Generator_TableClassName="itemDataTable" msprop:Generator_TableVarName="tableitem" msprop:Generator_TablePropName="item" msprop:Generator_RowDeletingName="itemRowDeleting" msprop:Generator_RowChangingName="itemRowChanging" msprop:Generator_RowEvHandlerName="itemRowChangeEventHandler" msprop:Generator_RowDeletedName="itemRowDeleted" msprop:Generator_UserTableName="item" msprop:Generator_RowChangedName="itemRowChanged" msprop:Generator_RowEvArgName="itemRowChangeEvent" msprop:Generator_RowClassName="itemRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="login" msprop:Generator_TableClassName="loginDataTable" msprop:Generator_TableVarName="tablelogin" msprop:Generator_TablePropName="login" msprop:Generator_RowDeletingName="loginRowDeleting" msprop:Generator_RowChangingName="loginRowChanging" msprop:Generator_RowEvHandlerName="loginRowChangeEventHandler" msprop:Generator_RowDeletedName="loginRowDeleted" msprop:Generator_UserTableName="login" msprop:Generator_RowChangedName="loginRowChanged" msprop:Generator_RowEvArgName="loginRowChangeEvent" msprop:Generator_RowClassName="loginRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="medicine" msprop:Generator_TableClassName="medicineDataTable" msprop:Generator_TableVarName="tablemedicine" msprop:Generator_TablePropName="medicine" msprop:Generator_RowDeletingName="medicineRowDeleting" msprop:Generator_RowChangingName="medicineRowChanging" msprop:Generator_RowEvHandlerName="medicineRowChangeEventHandler" msprop:Generator_RowDeletedName="medicineRowDeleted" msprop:Generator_UserTableName="medicine" msprop:Generator_RowChangedName="medicineRowChanged" msprop:Generator_RowEvArgName="medicineRowChangeEvent" msprop:Generator_RowClassName="medicineRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="patient" msprop:Generator_TableClassName="patientDataTable" msprop:Generator_TableVarName="tablepatient" msprop:Generator_TablePropName="patient" msprop:Generator_RowDeletingName="patientRowDeleting" msprop:Generator_RowChangingName="patientRowChanging" msprop:Generator_RowEvHandlerName="patientRowChangeEventHandler" msprop:Generator_RowDeletedName="patientRowDeleted" msprop:Generator_UserTableName="patient" msprop:Generator_RowChangedName="patientRowChanged" msprop:Generator_RowEvArgName="patientRowChangeEvent" msprop:Generator_RowClassName="patientRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="prescription" msprop:Generator_TableClassName="prescriptionDataTable" msprop:Generator_TableVarName="tableprescription" msprop:Generator_TablePropName="prescription" msprop:Generator_RowDeletingName="prescriptionRowDeleting" msprop:Generator_RowChangingName="prescriptionRowChanging" msprop:Generator_RowEvHandlerName="prescriptionRowChangeEventHandler" msprop:Generator_RowDeletedName="prescriptionRowDeleted" msprop:Generator_UserTableName="prescription" msprop:Generator_RowChangedName="prescriptionRowChanged" msprop:Generator_RowEvArgName="prescriptionRowChangeEvent" msprop:Generator_RowClassName="prescriptionRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="registration" msprop:Generator_TableClassName="registrationDataTable" msprop:Generator_TableVarName="tableregistration" msprop:Generator_TablePropName="registration" msprop:Generator_RowDeletingName="registrationRowDeleting" msprop:Generator_RowChangingName="registrationRowChanging" msprop:Generator_RowEvHandlerName="registrationRowChangeEventHandler" msprop:Generator_RowDeletedName="registrationRowDeleted" msprop:Generator_UserTableName="registration" msprop:Generator_RowChangedName="registrationRowChanged" msprop:Generator_RowEvArgName="registrationRowChangeEvent" msprop:Generator_RowClassName="registrationRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
